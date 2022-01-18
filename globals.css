@@ -1,0 +1,60 @@
+body {
+  background-color: rgb(8, 1, 51);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div.main {
+  background-color: white;
+  width: 60%;
+  padding: 25px;
+  box-sizing: border-box;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
+
+h1 {
+  color: rgb(0, 0, 0);
+  margin-left: 40px;
+  font-family: "Oooh Baby", cursive;
+  font-size: 4.2rem;
+  animation: flicker 1.5s infinite alternate;
+}
+
+h2 {
+  color: rgb(0, 0, 0);
+  margin-left: 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {
+  color: rgb(0, 0, 0);
+  margin-left: 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul {
+  list-style-image: circle;
+  padding-left: 100px;
+}
+
+/* Flickering animation */
+@keyframes flicker {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #0fa,
+      0 0 80px #0fa, 0 0 90px #0fa, 0 0 100px #0fa, 0 0 150px #0fa;
+  }
+
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+  }
+}
